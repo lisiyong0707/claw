@@ -7,7 +7,7 @@
 ## 项目结构
 
 ```
-my-proxy/
+claw/
 ├── Dockerfile
 ├── entrypoint.sh
 └── .github/
@@ -143,7 +143,7 @@ jobs:
 git init
 git add .
 git commit -m "init"
-git remote add origin https://github.com/你的用户名/my-proxy.git
+git remote add origin https://github.com/你的用户名/claw.git
 git push -u origin main
 ```
 
@@ -152,12 +152,12 @@ git push -u origin main
 构建完成后镜像地址为：
 
 ```
-ghcr.io/你的用户名/my-proxy:latest
+ghcr.io/你的用户名/claw:latest
 ```
 
 ### 第二步：设置镜像为公开
 
-仓库页面 → Packages → 找到 `my-proxy` → Package settings → Change visibility → Public
+仓库页面 → Packages → 找到 `claw` → Package settings → Change visibility → Public
 
 > 不设为公开，ClawCloud 拉取时会报 403 Forbidden 错误。
 
@@ -233,7 +233,7 @@ vless://你的UUID@proxy.example.com:443?encryption=none&security=tls&sni=proxy.
 
 **ClawCloud 拉取镜像报 403 Forbidden**
 
-镜像未设为公开。进入 GitHub Packages → my-proxy → Package settings → Change visibility → Public。
+镜像未设为公开。进入 GitHub Packages → claw → Package settings → Change visibility → Public。
 
 **日志里出现 bad path: /**
 
