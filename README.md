@@ -171,7 +171,7 @@ ghcr.io/你的用户名/claw:latest
 |------|---------|
 | App Name | 自定义，如 `Claw-0609-USW` |
 | Image Source | Public Image |
-| Image Name | `ghcr.io/你的用户名/my-proxy:latest` |
+| Image Name | `ghcr.io/你的用户名/claw:latest` |
 | CPU | 0.1 Core |
 | Memory | 128 Mi |
 | Container Port | `2777` |
